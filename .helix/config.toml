@@ -1,3 +1,3 @@
 [keys.normal]
-"C-r" = [":write", ":sh kitty @ send-text --match cmdline:python '%%run \"%{buffer_name}\"\n'"]
-"C-a" = [":write", ":sh python .state_manager.py \"%{buffer_name}\"", "select_all", "delete_selection"]
+"C-r" = [":write", ":sh kitty @ send-text --match cmdline:python 'prun(\"%{buffer_name}\")\n'"]
+"C-a" = [":write", ":sh kitty @ send-text --match cmdline:python 'new_cell(\"%{buffer_name}\")\n'", "select_all", "delete_selection"]
