@@ -1,2 +1,5 @@
 [keys.normal]
 "C-r" = [":write", ":pipe-to cat > .cell && kitty @ send-text --match cmdline:python '%%load .cell\n\n'"]
+
+[keys.select]
+"C-r" = [":write", ":pipe-to cat > .cell && kitty @ send-text --match cmdline:python '%%load .cell\n\n'"]
