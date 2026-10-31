@@ -1,36 +1,25 @@
 # Helix Notebook
 
-An interactive Python experience with Helix, the Kitty terminal and IPython.
-
-## Prerequisites
-
-- `uv` package manager
-- `kitty` terminal
+An interactive Python experience with the Helix text editor.
 
 ## Getting Started
 
-Install the dependencies
+Install the dependencies (optional, only for plotting in the terminal)
 
 ```sh
 uv sync
 ```
 
-Open a new kitty window
+Open a new terminal window
 
 ```sh
-kitty -o allow_remote_control=yes -o enabled_layouts=tall
+python notebook.py
 ```
 
-Inside the new terminal create a split
+Inside a separate terminal tab, start working on a Python file!
 
 ```sh
-kitty @ launch --title python --cwd=current --keep-focus uv run ipython
-```
-
-Start working on a Python file!
-
-```sh
-hx my_notebook.py
+hx main.py
 ```
 
 Select some text with your mouse or the `x` key. Press `control` `r` to run it in IPython.
