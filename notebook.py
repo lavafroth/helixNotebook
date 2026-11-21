@@ -15,7 +15,9 @@ interpreter = code.InteractiveConsole()
 try:
     with open(pipe) as handle:
         while True:
-            interpreter.push(handle.read())
+            interpreter.push("")
+            for line in handle:
+                interpreter.push(line.rstrip("\r\n"))
 except FileNotFoundError as e:
     e.add_note("Named pipe no longer exists")
     raise
